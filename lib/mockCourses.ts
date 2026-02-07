@@ -10,7 +10,7 @@ export const mockCourses: Course[] = [
         slug: "nextjs-seo-mastery",
         title: "Next.js SEO Mastery",
         description: "Learn how to build high-performance, SEO-optimized applications using Next.js and modern web standards.",
-        provider: "StarHib Academy"
+        provider: "StarHub Academy"
     }
 ]
 export function getCourseBySlug(slug: string): Course | undefined {

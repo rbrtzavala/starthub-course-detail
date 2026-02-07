@@ -5,8 +5,28 @@ type Props = {
 }
 
 export default function CourseDetail({ course }: Props) {
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        name: course.title,
+        description: course.descriptio,
+        provider: {
+            "@type": "Organization",
+            name: course.provider,
+            url: "https://www.starhub.academy",
+        },
+    }
     return (
         <main className="mx-auto max-w-3xl px-4 py-12">
+            {/* Structured Data for Google */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(jsonLd),
+                }}
+            />
+            {/* End Structured Data */}
+
             <article>
                 <header className="mb-6">
                     <h1 className="text-3xl font-bold text-slate-900">
