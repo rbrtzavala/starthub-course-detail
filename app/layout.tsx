@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.starhub.academy"),
   title: {
-    default: ":StarHub Academy",
+    default: "StarHub Academy",
     template: "%s | StarHub Academy"
   },
   description: "StartHub Academy offers high-quality courses focused on modern web development and performance-driven learning.",
@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={
-            "bg-black text-slate-900 antialiased " +
+            "bg-white text-slate-900 antialiased " +
             `${geistSans.variable} ${geistMono.variable} antialiased`
         }
       >
