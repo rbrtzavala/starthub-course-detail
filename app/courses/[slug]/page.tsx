@@ -1,7 +1,9 @@
-import { getCourseBySlug } from "@/lib/mockCourses";
-import CourseDetail from "@/components/CourseDetail"
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+
+import { getCourseBySlug } from "@/lib/mockCourses";
+import CourseDetail from "@/components/CourseDetail"
+import { mockCourses } from "@/lib/mockCourses";
 
 type PageProps = {
     params: {
@@ -43,6 +45,12 @@ export async function generateMetadata(
             description,
         },
     }
+}
+
+export function generateStaticParams() {
+    return mockCourses.map((course) => ({
+        slug: course.slug,
+    }))
 }
 
 async function CoursePage({ params }: PageProps) {

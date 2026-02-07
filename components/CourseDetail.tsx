@@ -9,7 +9,7 @@ export default function CourseDetail({ course }: Props) {
         "@context": "https://schema.org",
         "@type": "Course",
         name: course.title,
-        description: course.descriptio,
+        description: course.description,
         provider: {
             "@type": "Organization",
             name: course.provider,
