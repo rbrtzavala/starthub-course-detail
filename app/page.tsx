@@ -21,11 +21,15 @@ export default function HomePage() {
                     about quality, scalability, and real-world impact.
                 </p>
 
+                <div className="mt-5 mb-2 text-sm font-bold uppercase tracking-wide brand-color-tertiary">
+                    Courses: {" "}
+                </div>
+
                 {mockCourses.map(course => {
                     return (
                         <div
                             key={course.id}
-                            className="mt-10"
+                            className="mb-10"
                         >
                             <h2 className="text-2xl font-semibold mb-2 color-brand-primary">
                                 {course.title}
