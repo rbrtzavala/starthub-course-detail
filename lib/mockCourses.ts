@@ -7,7 +7,7 @@ export type Course = {
 
 export const mockCourses: Course[] = [
     {
-        slug: "mextjs-seo-mastery",
+        slug: "nextjs-seo-mastery",
         title: "Next.js SEO Mastery",
         description: "Learn how to build high-performance, SEO-optimized applications using Next.js and modern web standards.",
         provider: "StarHib Academy"

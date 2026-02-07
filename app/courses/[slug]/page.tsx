@@ -8,8 +8,9 @@ type PageProps = {
     }
 }
 
-export default function CoursePage({ params }: PageProps) {
-    const course = getCourseBySlug(params.slug)
+async function CoursePage({ params }: PageProps) {
+    const { slug } = await params; 
+    const course = getCourseBySlug(slug)
 
     if (!course) {
         notFound()
@@ -17,3 +18,5 @@ export default function CoursePage({ params }: PageProps) {
 
     return <CourseDetail course={course} />
 }
+
+export default CoursePage
