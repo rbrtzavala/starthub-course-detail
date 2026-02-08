@@ -21,9 +21,9 @@ export default function HomePage() {
                     about quality, scalability, and real-world impact.
                 </p>
 
-                <div className="mt-5 mb-2 text-sm font-bold uppercase tracking-wide brand-color-tertiary">
+                <h2 className="mt-5 mb-2 text-md font-bold uppercase tracking-wide brand-color-tertiary">
                     Courses: {" "}
-                </div>
+                </h2>
 
                 {mockCourses.map(course => {
                     return (
@@ -31,9 +31,9 @@ export default function HomePage() {
                             key={course.id}
                             className="mb-10"
                         >
-                            <h2 className="text-2xl font-semibold mb-2 color-brand-primary">
+                            <h3 className="text-2xl font-semibold mb-2 color-brand-primary">
                                 {course.title}
-                            </h2>
+                            </h3>
                             <p>{course.short_description}</p>
                             <Link
                                 href={`/courses/${course.slug}`}

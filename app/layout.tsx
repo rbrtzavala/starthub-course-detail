@@ -30,8 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={
-            "bg-white text-slate-900 antialiased " +
-            `${geistSans.variable} ${geistMono.variable} antialiased`
+            `bg-white text-slate-900 antialiased ${geistSans.variable} ${geistMono.variable} antialiased`
         }
       >
         {children}
