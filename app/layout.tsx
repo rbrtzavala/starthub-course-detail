@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.starhub.academy"),
+  metadataBase: new URL("https://rbrtzavalastarhub.netlify.app/"),
   title: {
     default: "StarHub Academy",
     template: "%s | StarHub Academy"

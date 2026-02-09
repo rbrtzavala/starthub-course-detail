@@ -27,7 +27,7 @@ export async function generateMetadata(
 
     const title = `${course.title} | StarHub Academy`;
     const description = course.description;
-    const url = `https://www.starhub.academy/courses/${course.slug}`;
+    const url = `https://rbrtzavalastarhub.netlify.app//courses/${course.slug}`;
 
     return {
         title,
