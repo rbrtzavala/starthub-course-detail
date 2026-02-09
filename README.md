@@ -1,5 +1,7 @@
 # StartHub Academy – Course Detail Page (Next.js)
 
+[Live Demo](https://rbrtzavalastarhub.netlify.app/)
+
 This project demonstrates a high-performance, SEO-optimized Course Detail page built with Next.js App Router.
 
 ## Tech Stack
