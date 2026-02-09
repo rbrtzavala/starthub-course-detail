@@ -3,11 +3,13 @@ import { mockCourses } from "@/lib/mockCourses";
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = "https://rbrtzavalastarhub.netlify.app/";
+    const monthlyFreq = 'monthly' as const;
+    const yearlyFreq = 'yearly' as const;
 
     const coursePages = mockCourses.map((course) => ({
         url: `${baseUrl}courses/${course.slug}`,
         lastModified: new Date(),
-        changeFrequency: "monthly",
+        changeFrequency: monthlyFreq,
         priority: 0.8,
     }))
 
@@ -15,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         {
             url: baseUrl,
             lastModified: new Date(),
-            changeFrequency: "yearly",
+            changeFrequency: yearlyFreq,
             priority: 1,
         },
         ...coursePages,
